@@ -71,7 +71,7 @@ This is a fallback function without function name. It will be called while doing
 <p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%209.png"></p>
 
 We declare a modifier afterDeadline(). Those functions modified with this modifier will first check the condition defined here. Only when satisfying the condition will other functions continue to run.
-<p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2010.jpeg"></p>
+<p align="center"><img  width="300" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2010.jpeg"></p>
 
 We need a function to check whether have reached the funding goal. As introduces at modifier, this function would first check the condition in modifier afterDeadline(), where "now >= deadline". And if reaches the funding goal, it will set tag fundingGoalReached to true and activate event GoalReached().
 <p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2011.png"></p>
@@ -80,6 +80,6 @@ The last one is the function to withdraw the contract safely. Within this functi
 <p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2012.png"></p>
 
 # Let's test!
-To test our contract defined above, we need to first declare and release our own tokens on Ethereum. Following the instructions from [website] (https://learnblockchain.cn/2018/01/12/create_token/) to release tokens. 
+To test our contract defined above, we need to first declare and release our own tokens on Ethereum. Following the instructions from [website](https://learnblockchain.cn/2018/01/12/create_token/) to release tokens. 
 Through the tools of MetaMask and Remix Solidity IDE in Chrome, I have finally successfully created and deployed my token contract and crowd sale contract!
 <p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2013.png"></p>
