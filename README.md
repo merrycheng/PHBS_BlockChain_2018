@@ -82,7 +82,7 @@ The last one is the function to withdraw the contract safely. Within this functi
 # Let's test!
 To test our contract defined above, we need to first declare and release our own tokens on Ethereum. Following the instructions from [website](https://learnblockchain.cn/2018/01/12/create_token/) to release tokens. 
 Through the tools of MetaMask and Remix Solidity IDE in Chrome, I have finally successfully created and deployed my token contract and crowd sale contract!
-<p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2013.png"></p>
+<p align="center"><img  width="800" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2013.png"></p>
 
 # Main Reference:
 1. Chinese blockchain technology and application development research report in 2018, published by Chinese blockchain BBS.
