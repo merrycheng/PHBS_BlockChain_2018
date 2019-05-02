@@ -62,7 +62,7 @@ Since we have talked much about the crowdsale, this part is to take a toy implem
 
 The basic idea of a crowdfunding contract is that the beneficiary sets a funding goal. When the contract reaches the deadline, if the funding goal is not completed, all the amount raised will be returned to the original account. In the smart contract based on the Ethereum platform, the program code is open, and the transaction information of each investor is stored in the distributed blockchain. Thus any tampering of information will be discovered. And the execution of the contract is automatic and mandatory, so there is no need for a third trusted platform to provide guarantees. Moreover, a small fee (gas) must be paid to the Ethereum platform for each transaction. As for tokens mentioned above, they are issued by the initiator on the Ethereum. At the same time, the initiator sets the token’s name, determines the exchange rate to the officially token. After the issuance, the investor can make token transactions with others.
 
-Now let’s start with my test on such a contract. We first declare some local properties related to our contract.
+Now let’s start with my test on such a [contract](https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/crowdsale.sol). We first declare some local properties related to our contract.
 <p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%206.png"></p>
 
 And register some required events, which would be activated to store related events on ethereum block chain.
@@ -106,12 +106,12 @@ Click on the "Create" button. After agreeing to pay the gas for the transaction,
 <p align="center"><img  width="800" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2019.png"></p>
 
 # Main Reference:
-1. Chinese blockchain technology and application development research report in 2018, published by Chinese blockchain BBS.
+[1] Chinese blockchain technology and application development research report in 2018, published by Chinese blockchain BBS.
 
-2. Nguyen Q K. Blockchain - A Financial Technology for Future Sustainable Development[C]// International Conference on Green Technology & Sustainable Development. 2016.
+[2] Nguyen Q K. Blockchain - A Financial Technology for Future Sustainable Development[C]// International Conference on Green Technology & Sustainable Development. 2016.
 
-3. TokenMania, AutonomousNEXT, 2018.
+[3] TokenMania, AutonomousNEXT, 2018.
 
-4. Venegas P. Initial Coin Offering (ICO) Risk, Value and Cost in Blockchain Trustless Crypto Markets[J]. Social Science Electronic Publishing, 2017.
+[4] Venegas P. Initial Coin Offering (ICO) Risk, Value and Cost in Blockchain Trustless Crypto Markets[J]. Social Science Electronic Publishing, 2017.
 
-5. [https://blog.csdn.net/u010986776/article/details/84142837](https://blog.csdn.net/u010986776/article/details/84142837)
+[5] [https://blog.csdn.net/u010986776/article/details/84142837](https://blog.csdn.net/u010986776/article/details/84142837)
