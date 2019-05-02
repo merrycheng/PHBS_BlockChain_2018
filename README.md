@@ -85,8 +85,25 @@ The last one is the function to withdraw the contract safely. Within this functi
 
 # Let's test!
 To test our contract defined above, we need to first declare and release our own tokens on Ethereum. Following the instructions from [website](https://learnblockchain.cn/2018/01/12/create_token/) to release tokens. 
-Through the tools of MetaMask and Remix Solidity IDE in Chrome, I have finally successfully created and deployed my token contract and crowd sale contract!
-<p align="center"><img  width="800" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2013.png"></p>
+
+First, let me introduce ERC20. It is a token standard defined by Ethereum. The agreements that we must comply with when implementing tokens, such as naming the token, setting the total amount, and the implementation of the token trading function, etc. The following picture is the content of ERC20.
+<p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2013.png"></p>
+<p align="center"><img  width="500" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2014.png"></p>
+
+According to the ERC20, there is a fixed version of token issuance code, see in the attached file “[token.sol](https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/token.sol)”.Then begin my token issuance process:
+
+1. Create an account through a tool named MetaMask.
+<p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2015.png"></p>
+
+2. On Remix Solidity IDE, paste the solidity codes (token.sol) for publishing tokens to the editing window. Change the compile version of solidity to 0.4.16. In the parameter input box, type in three parameters in json type, which are "1000", "MCToken", "MC". They are the numbers, name and symbol for the tokkens. 
+<p align="center"><img  width="600" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2016.png"></p>
+
+Click on the "Create" button. After agreeing to pay the gas for the transaction, the token contract would be published.
+<p align="center"><img  width="200" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2017.png"></p>
+<p align="center"><img  width="800" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2018.png"></p>
+
+3. Time to publish our crowd sale contract to ethereum. Similar to the steps publishing tokens, we create a new file, paste in the codes for crowd sale contract. In the parameter input box, we input "0x0f019EE201C633359E4C11f60936474ACC936D84", "100", "100", "1000", "0x0f019EE201C633359E4C11f60936474ACC936D84" which are the address of my account, goal of the funding, duration time in minutes, value of the token, and the address of the tokens I just published. And click on the "Create" button. After a while, it success.
+<p align="center"><img  width="800" src="https://github.com/merrycheng/PHBS_BlockChain_2018/blob/master/figure/figure%2019.png"></p>
 
 # Main Reference:
 1. Chinese blockchain technology and application development research report in 2018, published by Chinese blockchain BBS.
